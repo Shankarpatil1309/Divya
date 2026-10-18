@@ -1,0 +1,116 @@
+    @keyframes float-soft {
+    0%,
+    100% {
+        transform: translate3d(0, 0, 0) rotate(-8deg);
+    }
+    50% {
+        transform: translate3d(0, -14px, 0) rotate(-4deg);
+    }
+}
+
+@keyframes float-sphere {
+    0%,
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(0, -18px, 0);
+    }
+}
+
+@keyframes equalize {
+    from {
+        height: 3px;
+    }
+    to {
+        height: 13px;
+    }
+}
+
+@keyframes twinkle {
+    0%,
+    100% {
+        opacity: .38;
+        transform: scale(.85);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.15);
+    }
+}
+
+@keyframes candle-glow {
+    0%,
+    100% {
+        opacity: .7;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes card-opening {
+    0% {
+        transform: perspective(900px) rotateY(-10deg) rotateX(3deg) scale(1);
+    }
+    45% {
+        transform: perspective(900px) rotateY(14deg) rotateX(1deg) scale(1.035);
+    }
+    100% {
+        transform: perspective(900px) rotateY(0) rotateX(0) scale(1);
+    }
+}
+
+.hero-card {
+    animation: float-soft 7s ease-in-out infinite;
+}
+
+.hero-card.card-open {
+    animation: card-opening .72s var(--ease) both;
+}
+
+.hero-orb {
+    animation: float-sphere 8s ease-in-out infinite;
+}
+
+.orb-b {
+    animation-delay: -3s;
+}
+
+.orb-c {
+    animation-delay: -5s;
+}
+
+.cake-art .flame {
+    animation: candle-glow 1.5s ease-in-out infinite;
+}
+
+.card-corner,
+.cake-spark {
+    animation: twinkle 3.5s ease-in-out infinite;
+}
+
+.spark-two {
+    animation-delay: 1.2s;
+}
+
+.corner-tr,
+.corner-bl {
+    animation-delay: 1.3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+    }
+}

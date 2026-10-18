@@ -1,0 +1,512 @@
+@media (max-width: 900px) {
+     :root {
+        --page-gutter: clamp(24px, 5vw, 52px);
+    }
+    .hero {
+        min-height: 760px;
+    }
+    .hero-layout {
+        grid-template-columns: .85fr 1.15fr;
+        gap: 8px
+    }
+    .hero-art {
+        min-height: 500px
+    }
+    .hero-card {
+        width: min(340px, 70vw);
+        min-height: 425px
+    }
+    .orbit {
+        width: 390px;
+        height: 390px
+    }
+    .orbit-two {
+        width: 430px;
+        height: 430px
+    }
+    .note-date {
+        right: -4px
+    }
+    .note-wish {
+        left: -6px
+    }
+    .section-pad {
+        padding-top: 100px;
+        padding-bottom: 100px
+    }
+    .profile-layout {
+        gap: 60px
+    }
+    .event-grid {
+        gap: 12px
+    }
+    .event-card {
+        padding: 25px 20px
+    }
+    .countdown-inner {
+        flex-direction: column;
+        align-items: flex-start
+    }
+    .countdown-timer {
+        align-self: flex-end;
+        margin-top: -12px
+    }
+    .countdown-message {
+        bottom: 18px
+    }
+    .location-layout {
+        gap: 45px
+    }
+    .map-frame {
+        min-height: 340px
+    }
+    .map-frame iframe {
+        height: 320px
+    }
+}
+
+@media (max-width: 680px) {
+     :root {
+        --page-gutter: 23px;
+    }
+    html {
+        scroll-padding-top: 70px
+    }
+    .site-header {
+        padding-top: 19px;
+        padding-bottom: 19px
+    }
+    .wordmark {
+        font-size: 10px
+    }
+    .menu-toggle {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        width: 38px;
+        height: 38px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        border: 1px solid rgba(255, 255, 255, .19);
+        border-radius: 50%;
+        background: rgba(255, 255, 255, .04)
+    }
+    .menu-toggle span {
+        width: 14px;
+        height: 1px;
+        background: var(--white);
+        transition: transform .2s
+    }
+    .menu-toggle[aria-expanded="true"] span:first-child {
+        transform: translateY(3.5px) rotate(45deg)
+    }
+    .menu-toggle[aria-expanded="true"] span:last-child {
+        transform: translateY(-3.5px) rotate(-45deg)
+    }
+    .primary-nav {
+        position: absolute;
+        top: 67px;
+        right: 18px;
+        left: 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 11px 18px;
+        border: 1px solid var(--glass-border);
+        background: rgba(23, 17, 42, .97);
+        font-size: 12px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-8px);
+        transition: opacity .2s, visibility .2s, transform .2s;
+        backdrop-filter: blur(18px)
+    }
+    .primary-nav.is-open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0)
+    }
+    .primary-nav a {
+        padding: 11px 2px;
+        border-bottom: 1px solid rgba(255, 255, 255, .07)
+    }
+    .primary-nav a:last-child {
+        border-bottom: 0
+    }
+    .nav-date {
+        margin-top: 4px
+    }
+    .hero {
+        min-height: auto;
+        min-height: 100svh;
+        padding-top: 105px;
+        padding-bottom: 80px
+    }
+    .hero-layout {
+        grid-template-columns: 1fr;
+        gap: 5px;
+        margin: 25px auto 0
+    }
+    .hero-copy {
+        max-width: 430px;
+        margin: 0 auto;
+        text-align: center
+    }
+    .hero-copy .eyebrow {
+        justify-content: center
+    }
+    .hero h1 {
+        font-size: clamp(53px, 14vw, 76px)
+    }
+    .hero-intro {
+        max-width: 290px;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 12px
+    }
+    .hero-person {
+        justify-content: center
+    }
+    .hero-art {
+        min-height: 435px;
+        margin-top: -5px
+    }
+    .hero-card {
+        width: min(310px, 76vw);
+        min-height: 380px;
+        padding: 35px 22px 29px
+    }
+    .cake-art {
+        transform: scale(.83);
+        margin: -2px 0 -7px
+    }
+    .card-host {
+        font-size: 34px
+    }
+    .card-script {
+        font-size: 18px
+    }
+    .orbit {
+        width: 340px;
+        height: 340px
+    }
+    .orbit-two {
+        width: 375px;
+        height: 375px
+    }
+    .note-date {
+        top: 28px;
+        right: 0
+    }
+    .note-wish {
+        bottom: 55px;
+        left: 0
+    }
+    .hero-caption {
+        right: 0;
+        bottom: 19px;
+        font-size: 7px
+    }
+    .hero-orb.orb-a {
+        top: 12%;
+        left: 4%;
+        width: 32px;
+        height: 32px
+    }
+    .hero-orb.orb-b {
+        right: 5%;
+        bottom: 12%
+    }
+    .scroll-cue {
+        bottom: 20px;
+        font-size: 7px
+    }
+    .section-pad {
+        padding-top: 77px;
+        padding-bottom: 77px
+    }
+    .profile-layout {
+        grid-template-columns: 1fr;
+        gap: 58px;
+        margin-top: 42px
+    }
+    .portrait-wrap {
+        width: min(78%, 320px)
+    }
+    .portrait-stamp {
+        right: -19px;
+        width: 78px;
+        height: 78px;
+        font-size: 7px
+    }
+    .profile-copy h2,
+    .section-heading h2,
+    .gallery-heading h2,
+    .location-copy h2 {
+        font-size: clamp(36px, 10vw, 49px)
+    }
+    .profile-copy .eyebrow,
+    .section-heading .eyebrow,
+    .gallery-heading .eyebrow,
+    .location-copy .eyebrow {
+        margin-top: 0
+    }
+    .profile-copy h2 {
+        margin-bottom: 17px
+    }
+    .body-copy {
+        font-size: 12px
+    }
+    .profile-facts {
+        gap: 15px 20px
+    }
+    .profile-facts p {
+        font-size: 13px
+    }
+    .profile-spark {
+        right: 2%;
+        top: -20px
+    }
+    .section-heading {
+        margin-bottom: 30px
+    }
+    .section-heading .eyebrow {
+        margin-top: 25px
+    }
+    .event-grid {
+        grid-template-columns: 1fr;
+        gap: 12px
+    }
+    .event-card {
+        min-height: 0;
+        padding: 23px 22px 25px
+    }
+    .event-icon {
+        margin-bottom: 14px
+    }
+    .event-card h3 {
+        margin-bottom: 8px;
+        font-size: 21px
+    }
+    .event-description {
+        max-width: none
+    }
+    .countdown-section {
+        padding-top: 60px;
+        padding-bottom: 70px
+    }
+    .countdown-inner {
+        min-height: 255px;
+        gap: 22px;
+        padding: 30px 22px 43px
+    }
+    .countdown-copy h2 {
+        font-size: 32px
+    }
+    .countdown-copy .eyebrow {
+        font-size: 7px
+    }
+    .countdown-timer {
+        align-self: center;
+        gap: 7px;
+        margin: 0
+    }
+    .count-box {
+        min-width: 51px
+    }
+    .count-box span {
+        font-size: 37px
+    }
+    .count-box small {
+        font-size: 6px
+    }
+    .count-separator {
+        font-size: 18px
+    }
+    .countdown-message {
+        right: 22px;
+        bottom: 14px;
+        left: 22px;
+        text-align: center
+    }
+    .countdown-star {
+        right: -10px;
+        top: 53px;
+        font-size: 140px
+    }
+    .gallery-section {
+        padding-top: 75px
+    }
+    .gallery-heading {
+        display: block;
+        margin-bottom: 27px
+    }
+    .gallery-heading .eyebrow {
+        margin-top: 25px
+    }
+    .gallery-aside {
+        max-width: 290px;
+        margin: 13px 0 0;
+        font-size: 13px
+    }
+    .gallery-grid {
+        height: clamp(330px, 98vw, 430px)
+    }
+    .gallery-caption {
+        right: 9px;
+        bottom: 8px;
+        left: 9px;
+        gap: 6px;
+        padding: 11px 12px;
+        font-size: 12px
+    }
+    .gallery-slide-label {
+        font-size: 7px
+    }
+    .gallery-item {
+        width: min(76%, 340px);
+        border-radius: 17px
+    }
+    .gallery-item[data-position="previous"] {
+        transform: translateX(-121%) rotateY(25deg) translateZ(-95px) scale(.78)
+    }
+    .gallery-item[data-position="next"] {
+        transform: translateX(21%) rotateY(-25deg) translateZ(-95px) scale(.78)
+    }
+    .gallery-controls {
+        gap: 13px;
+        margin-top: 19px
+    }
+    .gallery-control {
+        width: 40px;
+        height: 40px
+    }
+    .gallery-play {
+        width: 35px;
+        height: 35px
+    }
+    .gallery-footnote {
+        font-size: 7px
+    }
+    .location-section {
+        padding-top: 80px
+    }
+    .location-layout {
+        grid-template-columns: 1fr;
+        gap: 34px;
+        margin-top: 36px
+    }
+    .location-copy .eyebrow {
+        margin-top: 25px
+    }
+    .location-copy h2 {
+        margin-bottom: 20px
+    }
+    .map-frame {
+        min-height: 300px
+    }
+    .map-frame iframe {
+        height: 280px
+    }
+    .map-label {
+        bottom: 18px;
+        left: 18px;
+        font-size: 7px
+    }
+    .closing-section {
+        min-height: 620px;
+        padding-top: 90px;
+        padding-bottom: 28px
+    }
+    .closing-card {
+        padding: 48px 21px 34px
+    }
+    .closing-card h2 {
+        font-size: clamp(37px, 10vw, 52px)
+    }
+    .closing-card>p:not(.eyebrow):not(.closing-date) {
+        font-size: 11px
+    }
+    .closing-stars {
+        top: 9%;
+        font-size: 15px;
+        letter-spacing: 35px
+    }
+    .closing-footer {
+        font-size: 7px
+    }
+    .music-toggle {
+        right: 3px;
+        bottom: 13px;
+        width: 44px;
+        min-width: 44px;
+        height: 44px;
+        gap: 0;
+        padding: 0;
+        border-radius: 50%
+    }
+    .music-label {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        clip-path: inset(50%)
+    }
+    .lightbox {
+        padding: 55px 16px
+    }
+    .lightbox-close {
+        top: 12px;
+        right: 12px
+    }
+    .lightbox-prev {
+        left: 8px
+    }
+    .lightbox-next {
+        right: 8px
+    }
+    .lightbox button {
+        width: 38px;
+        height: 38px;
+        font-size: 23px
+    }
+    .lightbox-figure img {
+        max-height: calc(100vh - 140px)
+    }
+}
+
+@media (max-width: 370px) {
+    .hero-art {
+        min-height: 390px
+    }
+    .hero-card {
+        min-height: 350px
+    }
+    .orbit {
+        width: 300px;
+        height: 300px
+    }
+    .orbit-two {
+        width: 325px;
+        height: 325px
+    }
+    .note-date {
+        padding: 8px 10px;
+        font-size: 8px
+    }
+    .note-wish {
+        padding: 8px 10px
+    }
+    .count-box {
+        min-width: 42px
+    }
+    .count-box span {
+        font-size: 32px
+    }
+}
